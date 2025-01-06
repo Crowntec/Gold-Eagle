@@ -33,8 +33,11 @@ nano data.txt
 
 add the token of your accounts each one in a separate line (you can use the extension i provided on my youtube channel) ctrl+x then y then enter
 
-python main.py
+python goldeagle.py
 
+TO UPDATE THE CODE
+chmod +x goldeagle.sh
+bash update.sh
 
 the script will generate around 86000 golddust if you let it run for 24 hours 
 you can convert them to around 6 xlm tokens and withdraw them to binance (I will post a tutorial on how to do it soon once I get verified on the bot).
