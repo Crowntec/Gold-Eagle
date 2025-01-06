@@ -79,7 +79,7 @@ banner = '''
 ██─▄▄▄██─▄─▄██─███─█▄▀─██─███▀██─▄█▀█
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
 channel: https://t.me/crown_prince_hacks
-Buy me coffee usdt: 0x4ee70e0f1bb829389b5b7f81af9fcafea2986885bde8b238>
+Buy me coffee usdt: 0x4ee70e0f1bb829389b5b7f81af9fcafea2986885bde8b238b4b96e6df0628acc
 
 '''
 
