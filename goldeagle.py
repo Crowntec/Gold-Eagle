@@ -5,7 +5,8 @@ import random
 import logging
 from colorama import Fore, Back, Style
 
-# Set up logging                                                                                                                                                                 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Read authentication tokens from data.txt
 with open("data.txt", "r") as file:
@@ -17,10 +18,12 @@ claim_url = "https://gold-eagle-api.fly.dev/wallet/claim"
 
 # Headers template (common for all requests except Authorization)
 headers_template = {
-    "accept": "application/json, text/plain, */*",                                                                                                                                   "accept-language": "en-US,en;q=0.9",
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
     "content-type": "application/json",
     "origin": "https://telegram.geagle.online",
-    "priority": "u=1, i",                                                                                                                                                            "referer": "https://telegram.geagle.online/",
+    "priority": "u=1, i",
+    "referer": "https://telegram.geagle.online/",
     "sec-ch-ua": '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
     "sec-ch-ua-mobile": "?0",
     "sec-ch-ua-platform": '"Windows"',
@@ -37,7 +40,7 @@ def send_tap_request(auth_token):
 
     data = {
         "available_taps": 1000,
-        "count": random.randint(998, 1000),  # Number of taps as random number
+        "count": random.randint(1, 2),  # Number of taps as random number
         "timestamp": int(time.time()),  # Generate current timestamp
         "salt": "[ID]"
     }
@@ -76,10 +79,9 @@ banner = '''
 ██─▄▄▄██─▄─▄██─███─█▄▀─██─███▀██─▄█▀█
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
 channel: https://t.me/crown_prince_hacks
-Buy me coffee usdt: 0x4ee70e0f1bb829389b5b7f81af9fcafea2986885bde8b238b4b96e6df0628acc
+Buy me coffee usdt: 0x4ee70e0f1bb829389b5b7f81af9fcafea2986885bde8b238>
 
 '''
-print(banner)
 
 while True:
     cycle_count += 1
@@ -97,11 +99,12 @@ while True:
             send_claim_request(token)
             time.sleep(1)  # Small delay between requests
 
-    logging.info(f"{Fore.YELLOW}Waiting 1003 seconds before the next cycle...{Style.RESET_ALL}")
-    total_seconds = 1003  #  in seconds
+    logging.info(f"{Fore.YELLOW}Waiting 5 seconds before the next cycle...{Style.RESET_ALL}")
+    total_seconds = 5  #  in seconds
     for i in range(total_seconds, 0, -1):
         minutes, seconds = divmod(i, 60)
         progress_bar = "█" * int(i / total_seconds * 20) + "-" * (20 - int(i / total_seconds * 20))
         print(f"\r{Fore.MAGENTA}{minutes:02d}:{seconds:02d} [{progress_bar}]{Style.RESET_ALL}", end="")
         time.sleep(1)
     print("\n")  # New line after the countdown
+
