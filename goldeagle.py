@@ -40,7 +40,7 @@ def send_tap_request(auth_token):
 
     data = {
         "available_taps": 1000,
-        "count": random.randint(1, 2),  # Number of taps as random number
+        "count": random.randint(998, 1000),  # Number of taps as random number
         "timestamp": int(time.time()),  # Generate current timestamp
         "salt": "[ID]"
     }
@@ -99,8 +99,8 @@ while True:
             send_claim_request(token)
             time.sleep(1)  # Small delay between requests
 
-    logging.info(f"{Fore.YELLOW}Waiting 5 seconds before the next cycle...{Style.RESET_ALL}")
-    total_seconds = 5  #  in seconds
+    logging.info(f"{Fore.YELLOW}Waiting 15 minutes before the next cycle...{Style.RESET_ALL}")
+    total_seconds = 1003  #  in seconds
     for i in range(total_seconds, 0, -1):
         minutes, seconds = divmod(i, 60)
         progress_bar = "█" * int(i / total_seconds * 20) + "-" * (20 - int(i / total_seconds * 20))
