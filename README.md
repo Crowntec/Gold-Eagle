@@ -41,3 +41,7 @@ you can convert them to around 6 xlm tokens and withdraw them to binance (I will
 
 I posted the script now to start generating coins from now and don't wait untill you get verified (it takes up to 36 hours).
 the bot is somewhat new and these new bots actually pay untill they get big, so hurry up and don't miss it
+
+
+NOTE: ANY MISUSE OF THIS SCRIPT I'M NOT RESPONDING FOR IT
+ITS JUST FOR EDUCATIONAL PURPOSES 
