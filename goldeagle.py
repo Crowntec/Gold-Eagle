@@ -3,7 +3,8 @@ import json
 import time
 import random
 import logging
-#from colorama import Fore, Back, Style
+#from colorama 
+import Fore, Back, Style
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
