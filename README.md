@@ -26,7 +26,7 @@ here are the commands
 git clone https://github.com/Crowntec/Gold-Eagle.git
 
 cd Gold-Eagle
-
+pip install colorama
 pip install requests
 
 nano data.txt
